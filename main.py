@@ -2,7 +2,7 @@ from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 from fastapi.openapi.utils import get_openapi
 
-from app.api.api import router
+from api.api import router
 # from app.api.api import router
 from app.core.config import settings
 
@@ -36,4 +36,9 @@ app.openapi_schema = get_openapi(
 
 if __name__ == "__main__":
     import uvicorn
-    uvicorn.run(app, host="localhost", port=8000, reload=True)
+    uvicorn.run(app,
+                host="localhost",
+                port=8000, 
+                reload=True,
+                workers=2
+                )

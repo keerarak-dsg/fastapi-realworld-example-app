@@ -1,0 +1,6 @@
+mypy
+pytest
+pytest-cov
+types-python-slugify
+ruff
+pytest-asyncio

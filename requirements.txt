@@ -1,0 +1,14 @@
+fastapi
+uvicorn[standard]
+python-jose[cryptography]
+passlib[bcrypt]
+alembic
+python-slugify
+pydantic[email]
+requests
+httpx
+sqlalchemy
+pydantic-settings
+psycopg[binary,pool]
+faker
+bcrypt
